@@ -1,34 +1,28 @@
-import { useState } from 'react'
 import './App.css'
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes, Link } from "react-router-dom";
+import HelpPage from "./HelpPage.jsx";
+import HomePage from "./HomePage.jsx";
+import AufgabenPage from "./AufgabenPage.jsx";
 
-function App() {
+export default function App() {
     return (
-        <HashRouter>
+        <Router>
             <nav>
                 <ul>
-                    <li>
-                        <Link to="/home">HomePage</Link>
-                    </li>
-                    <li>
-                        <Link to="/about">About</Link>
-                    </li>
-                    <li>
-                        <Link to="/help">Help</Link>
-                    </li>
+                    <li><Link to="/home">HomePage</Link></li>
+                    <li><Link to="/help">HelpPage</Link></li>
+                    <li><Link to="/aufgaben">AufgabenPage</Link></li>
                 </ul>
             </nav>
+
             <Routes>
+                <Route path="/" element={<HomePage />} />
                 <Route path="/home" element={<HomePage />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/help" element={<Help />} />
+                <Route path="/aufgaben" element={<AufgabenPage />} />
+                <Route path="/help" element={<HelpPage />} />
             </Routes>
-        </HashRouter>
+        </Router>
     );
 }
-
-export default App;
-
-
 
 
