@@ -1,22 +1,19 @@
 import React from "react";
 
-export default function ProgressBar({ steps, positionsX, positionsY, currentStep }) {
-
-    const svgWidth = 1500;
-    const svgHeight = 500;
-
+export default function ProgressBar({ steps, positionsX, positionsY, unlockedStep, onStepClick }) {
     return (
-        <svg width={svgWidth} height={svgHeight}>
-
+        <svg width={1500} height={500}>
             {steps.map((step, index) => {
-
                 const cx = positionsX[index];
                 const cy = positionsY[index];
-                const isActive = index < currentStep;
+                const isActive = index < unlockedStep;
 
                 return (
-                    <g key={index}>
-
+                    <g
+                        key={index}
+                        onClick={() => onStepClick(index)}
+                        style={{ cursor: isActive ? "pointer" : "not-allowed" }}
+                    >
                         {index > 0 && (
                             <line
                                 x1={positionsX[index - 1]}
@@ -27,15 +24,15 @@ export default function ProgressBar({ steps, positionsX, positionsY, currentStep
                                 strokeWidth="4"
                             />
                         )}
-
                         <circle
                             cx={cx}
                             cy={cy}
-                            r="10"
+                            r="15"
                             fill={isActive ? "blue" : "white"}
                             stroke={isActive ? "blue" : "lightgrey"}
                             strokeWidth="2"
                         />
+                        <text x={cx} y={cy + 30} textAnchor="middle">{step}</text>
                     </g>
                 );
             })}
