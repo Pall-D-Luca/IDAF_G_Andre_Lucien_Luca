@@ -1,55 +1,51 @@
-//Komponente von hier genommen https://github.com/ABSanthosh/react-quizlet-flashcard
-
-import {FlashcardArray, useFlashcardArray} from 'react-quizlet-flashcard';
-import "react-quizlet-flashcard/dist/index.css";
+import { useState } from 'react';
+import FC from './FlashCard.jsx'
+import deck from './data.json';
+import MCQ from './multipleChoice.jsx';
 
 export default function AufgabenPage() {
-    const deck = [
-        {
-            id: 1,
-            front: {html: <div>What is the capital of Alaska?</div>},
-            back: {html: <div>Juneau</div>},
-        },
-        {
-            id: 2,
-            front: {html: <div>What is the capital of California?</div>},
-            back: {html: <div>Sacramento</div>},
-        },
-    ];
+    const flashcards = deck.filter(d => d.type === 'flashcard');
+    const mcqs = deck.filter(d => d.type === 'mcq');
 
-    const flipArrayHook = useFlashcardArray({
-        deckLength: deck.length,
-        showProgressBar: true,
-    })
+    const [mcqIndex, setMcqIndex] = useState(0);
 
+    const goToNextMcq = () => {
+        setMcqIndex(prevIndex => (prevIndex + 1) % mcqs.length);
+    };
+
+    const goToPrevMcq = () => {
+        setMcqIndex(prevIndex => (prevIndex - 1 + mcqs.length) % mcqs.length);
+    };
+
+    const currentMcq = mcqs.length > 0 ? mcqs[mcqIndex] : null;
 
     return (
         <div>
             <h1>AufgabenPage</h1>
-            <FlashcardArray deck={deck.map((card) => ({
-                    ...card,
-                    front: {
-                        ...card.front,
-                        style: {
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            color: "gainsboro",
-                            backgroundColor: "darkslategray",
 
-            },
-            },
-                back: {
-                ...card.back,
-                style: {
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    color: "gainsboro",
-                    backgroundColor: "slategray",
-            },
-            },
-            }))} flipArrayHook={flipArrayHook}/>
+            {/* Flashcards */}
+            <FC flashcards={flashcards}/>
+
+            <hr />
+
+            {/* MCQs */}
+            <h2>Multiple Choice ({mcqs.length > 0 ? mcqIndex + 1 : 0} / {mcqs.length})</h2>
+            {currentMcq ? (
+                <div>
+                    <MCQ
+                        key={currentMcq.id}
+                        question={currentMcq.question}
+                        options={currentMcq.options}
+                        correct={currentMcq.correct}
+                    />
+                    <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1rem' }}>
+                        <button onClick={goToPrevMcq}>Zurück</button>
+                        <button onClick={goToNextMcq} style={{ marginLeft: '1rem' }}>Weiter</button>
+                    </div>
+                </div>
+            ) : (
+                <p>Keine MCQs zum Anzeigen.</p>
+            )}
         </div>
-    )
+    );
 }

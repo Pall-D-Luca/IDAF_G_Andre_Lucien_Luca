@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "type": "flashcard",
+    "front": { "html": "<div>What is the capital of Alaska?</div>" },
+    "back": { "html": "<div>Juneau</div>" }
+  },
+  {
+    "id": 2,
+    "type": "flashcard",
+    "front": { "html": "<div>What is the capital of California?</div>" },
+    "back": { "html": "<div>Sacramento</div>" }
+  },
+  {
+    "id": 3,
+    "type": "mcq",
+    "question": "Which of these is a US state?",
+    "options": ["Ontario", "Texas", "Quebec", "Alberta"],
+    "correct": "Texas"
+  },
+  {
+    "id": 4,
+    "type": "mcq",
+    "question": "Capital of France?",
+    "options": ["Paris", "Berlin", "Rome", "Madrid"],
+    "correct": "Paris"
+  }
+]
