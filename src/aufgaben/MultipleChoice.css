@@ -1,0 +1,50 @@
+.mcq-container {
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid #555; /* Darker border for dark theme */
+    border-radius: 8px;
+    width: 400px; /* Same width as flashcard for consistency */
+    background-color: #333; /* Dark background */
+    color: gainsboro; /* Light text color */
+    text-align: center;
+}
+
+.mcq-question {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.mcq-option-button {
+    display: block;
+    width: 100%; /* Make buttons take full width */
+    margin: 0.5rem 0; /* Slightly more margin */
+    padding: 0.8rem 1rem; /* Slightly more padding */
+    border: 1px solid #888;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    /* Default state */
+    background-color: #555; /* Darker button */
+    color: gainsboro; /* Light text */
+}
+
+.mcq-option-button:hover {
+    background-color: #777; /* Lighter on hover */
+}
+
+/* Styles for correct/incorrect answers */
+.mcq-option-button.correct {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.mcq-option-button.incorrect {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+.mcq-feedback {
+    margin-top: 1rem;
+    font-weight: bold;
+}
