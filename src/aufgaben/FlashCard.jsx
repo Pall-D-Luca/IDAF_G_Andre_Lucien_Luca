@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import './FlashCard.css';
 
 export default function FlashCard({ card }) {
     const [isFlipped, setIsFlipped] = useState(false);
@@ -12,7 +11,6 @@ export default function FlashCard({ card }) {
     if (!card) {
         return null; // Don't render if there's no card data
     }
-
     return (
         <div className="flashcard-container" onClick={() => setIsFlipped(!isFlipped)}>
             <div className={`flashcard ${isFlipped ? 'is-flipped' : ''}`}>

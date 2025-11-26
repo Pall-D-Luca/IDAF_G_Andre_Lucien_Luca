@@ -1,2 +1,47 @@
-/* Keeping this file for any future App-specific styles,
-   but most global styles have been moved to index.css for consistency. */
+/* Styles for HelpPage.jsx, conforming to the new design system */
+
+.help-page-container {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.help-page-container h1,
+.help-page-container h2,
+.help-page-container h3 {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: var(--spacing-sm);
+}
+
+.help-page-container h1 {
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: var(--spacing-lg);
+}
+
+.help-page-container h2 {
+    font-size: 1.5rem;
+    margin-top: var(--spacing-xl);
+}
+
+.help-page-container h3 {
+    font-size: 1.25rem;
+    margin-top: var(--spacing-lg);
+}
+
+.help-page-container ul {
+    list-style-position: inside;
+    padding-left: var(--spacing-sm);
+}
+
+.help-page-container ul li {
+    margin-bottom: var(--spacing-sm);
+}
+
+.help-page-container strong {
+    color: var(--primary-hover);
+}

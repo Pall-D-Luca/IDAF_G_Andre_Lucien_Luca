@@ -8,8 +8,8 @@ import MCQ from './multipleChoice.jsx';
 const ProgressBar = ({ current, total }) => {
     const progress = total > 0 ? ((current + 1) / total) * 100 : 0;
     return (
-        <div className="progress-bar-container" style={{width: '400px', margin: '1rem auto', backgroundColor: '#e0e0e0'}}>
-            <div className="progress-bar" style={{ height: '10px', backgroundColor: '#646cff', width: `${progress}%`, borderRadius: '5px' }}></div>
+        <div className="progress-bar">
+            <div className="progress-bar__indicator" style={{ width: `${progress}%` }}></div>
         </div>
     );
 };
@@ -78,16 +78,21 @@ export default function AufgabenPage({ setUnlockedStep }) {
             setCurrentIndex(prev => prev - 1);
         }
     };
-
+    
     if (loading) {
-        return <div>Lade Aufgabe...</div>;
+        return <div className="page-container text-center"><h2>Lade Aufgabe...</h2></div>;
     }
 
     if (!task || !taskData) {
         return (
-            <div>
-                <h2>Keine Aufgabe ausgewählt</h2>
-                <p><Link to="/">Zurück zur Startseite</Link></p>
+            <div className="page-container text-center">
+                <div className="card">
+                    <div className="card__body">
+                        <h2>Keine Aufgabe ausgewählt</h2>
+                        <p>Bitte kehren Sie zur Startseite zurück, um eine Aufgabe zu wählen.</p>
+                        <Link to="/" className="btn btn--primary mt-lg">Zurück zur Startseite</Link>
+                    </div>
+                </div>
             </div>
         );
     }
@@ -95,18 +100,26 @@ export default function AufgabenPage({ setUnlockedStep }) {
     const currentItem = taskData[currentIndex];
 
     return (
-        <div>
-            <h1>{task.name}</h1>
-            <ProgressBar current={currentIndex} total={taskData.length} />
+        <div className="page-container aufgaben-page">
+            <header className="page-header text-center">
+                <h1>{task.name}</h1>
+                <p className="aufgaben-page__progress">Frage {currentIndex + 1} von {taskData.length}</p>
+            </header>
 
-            {task.taskType === 'flashcards' && <FlashCard key={currentItem.id} card={currentItem} />}
-            {task.taskType === 'mcq' && <MCQ key={currentItem.id} question={currentItem.question} options={currentItem.options} correct={currentItem.correct} />}
+            <div className="card">
+                <div className="card__body">
+                    {task.taskType === 'flashcards' && <FlashCard key={currentItem.id} card={currentItem} />}
+                    {task.taskType === 'mcq' && <MCQ key={currentItem.id} question={currentItem.question} options={currentItem.options} correct={currentItem.correct} />}
+                </div>
 
-            <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1rem' }}>
-                <button onClick={goToPrev} disabled={currentIndex === 0}>Zurück</button>
-                <button onClick={goToNext} style={{ marginLeft: '1rem' }}>
-                    {taskData && currentIndex === taskData.length - 1 ? 'Abschliessen' : 'Weiter'}
-                </button>
+                <div className="card__footer aufgaben-page__controls">
+                    <button onClick={goToPrev} disabled={currentIndex === 0} className="btn btn--secondary">
+                        Zurück
+                    </button>
+                    <button onClick={goToNext} className="btn btn--primary">
+                        {taskData && currentIndex === taskData.length - 1 ? 'Abschliessen' : 'Weiter'}
+                    </button>
+                </div>
             </div>
         </div>
     );

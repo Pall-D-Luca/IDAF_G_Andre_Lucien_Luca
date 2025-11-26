@@ -1,11 +1,11 @@
 {
   "steps": [
-    { "name": "Start", "x": 400, "y": 50, "taskType": "flashcards", "dataset": "flashcards_set1.json", "step": 1 },
-    { "name": "Check", "x": 650, "y": 130, "taskType": "mcq", "dataset": "mcq_set1.json", "step": 2 },
-    { "name": "Review", "x": 900, "y": 50, "taskType": "flashcards", "dataset": "flashcards_set1.json", "step": 3 },
-    { "name": "Finish", "x": 1050, "y": 225, "taskType": "mcq", "dataset": "mcq_set1.json", "step": 4 },
-    { "name": "Extra1", "x": 950, "y": 400, "taskType": "flashcards", "dataset": "flashcards_set1.json", "step": 5 },
-    { "name": "Extra2", "x": 700, "y": 350, "taskType": "mcq", "dataset": "mcq_set1.json", "step": 6 },
-    { "name": "Extra3", "x": 450, "y": 400, "taskType": "flashcards", "dataset": "flashcards_set1.json", "step": 7 }
+    { "name": "Start", "x": 400, "y": 50, "mobile_x": 200, "mobile_y": 50, "taskType": "flashcards", "dataset": "flashcards_set1.json", "step": 1 },
+    { "name": "Check", "x": 650, "y": 130, "mobile_x": 200, "mobile_y": 150, "taskType": "mcq", "dataset": "mcq_set1.json", "step": 2 },
+    { "name": "Review", "x": 900, "y": 50, "mobile_x": 200, "mobile_y": 250, "taskType": "flashcards", "dataset": "flashcards_set1.json", "step": 3 },
+    { "name": "Finish", "x": 1050, "y": 225, "mobile_x": 200, "mobile_y": 350, "taskType": "mcq", "dataset": "mcq_set1.json", "step": 4 },
+    { "name": "Extra1", "x": 950, "y": 400, "mobile_x": 200, "mobile_y": 450, "taskType": "flashcards", "dataset": "flashcards_set1.json", "step": 5 },
+    { "name": "Extra2", "x": 700, "y": 350, "mobile_x": 200, "mobile_y": 550, "taskType": "mcq", "dataset": "mcq_set1.json", "step": 6 },
+    { "name": "Extra3", "x": 450, "y": 400, "mobile_x": 200, "mobile_y": 650, "taskType": "flashcards", "dataset": "flashcards_set1.json", "step": 7 }
   ]
 }
