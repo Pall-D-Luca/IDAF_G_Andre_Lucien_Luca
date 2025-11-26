@@ -2,7 +2,7 @@ import './App.css'
 import { HashRouter as Router, Route, Routes, Link } from "react-router-dom";
 import HelpPage from "./HelpPage.jsx";
 import HomePage from "./HomePage.jsx";
-import AufgabenPage from "./AufgabenPage.jsx";
+import AufgabenPage from "./aufgaben/AufgabenPage.jsx";
 
 export default function App() {
     return (
