@@ -1,19 +1,21 @@
-import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import ProgressBar from './ProgressBar.jsx';
 import stepsData from './progressbar.json';
 
-export default function HomePage() {
-    const [unlockedStep, setUnlockedStep] = useState(1); // nur erster Schritt freigegeben
+export default function HomePage({ unlockedStep }) { // No longer needs setUnlockedStep
+    const navigate = useNavigate();
+    const { steps } = stepsData; // Get the full steps array
 
-    const steps = stepsData.steps.map(s => s.name);
-    const positionsX = stepsData.steps.map(s => s.x);
-    const positionsY = stepsData.steps.map(s => s.y);
+    const handleStepClick = (stepIndex) => {
+        const clickedStep = steps[stepIndex];
 
-    const handleStepClick = (index) => {
-        if (index === unlockedStep - 1) {
-            // Punkt erfolgreich gelöst
-            alert(`Step ${index + 1} erledigt!`);
-            setUnlockedStep(prev => Math.min(prev + 1, steps.length));
+        // Allow user to start the *next* unlocked step
+        if (clickedStep.step === unlockedStep) {
+            navigate('/aufgaben', {
+                state: { task: clickedStep } // Pass the whole step object
+            });
+        } else if (clickedStep.step < unlockedStep) {
+            alert("Diesen Schritt hast du schon erledigt!");
         } else {
             alert("Diesen Schritt kannst du noch nicht machen!");
         }
@@ -22,11 +24,8 @@ export default function HomePage() {
     return (
         <div>
             <h2>Freigeschaltete Schritte: {unlockedStep}</h2>
-
             <ProgressBar
-                steps={steps}
-                positionsX={positionsX}
-                positionsY={positionsY}
+                steps={steps} // Pass the full array
                 unlockedStep={unlockedStep}
                 onStepClick={handleStepClick}
             />

@@ -1,17 +1,5 @@
 [
   {
-    "id": 1,
-    "type": "flashcard",
-    "front": { "html": "<div>What is the capital of YOU?</div>" },
-    "back": { "html": "<div>ME</div>" }
-  },
-  {
-    "id": 2,
-    "type": "flashcard",
-    "front": { "html": "<div>What is the capital of California?</div>" },
-    "back": { "html": "<div>Sacramento</div>" }
-  },
-  {
     "id": 3,
     "type": "mcq",
     "question": "Which of these is a US state?",

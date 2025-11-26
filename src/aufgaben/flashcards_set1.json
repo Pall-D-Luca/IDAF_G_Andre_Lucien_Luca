@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "type": "flashcard",
+    "front": { "html": "<div>What is the capital of Alaska?</div>" },
+    "back": { "html": "<div>Juneau</div>" }
+  },
+  {
+    "id": 2,
+    "type": "flashcard",
+    "front": { "html": "<div>What is the capital of California?</div>" },
+    "back": { "html": "<div>Sacramento</div>" }
+  }
+]

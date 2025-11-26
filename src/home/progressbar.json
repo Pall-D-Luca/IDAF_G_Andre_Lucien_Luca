@@ -1,12 +1,11 @@
 {
   "steps": [
-    { "name": "Start", "x": 400, "y": 50 },
-    { "name": "Check", "x": 650, "y": 130 },
-    { "name": "Review", "x": 900, "y": 50 },
-    { "name": "Finish", "x": 1050, "y": 225 },
-    { "name": "Extra1", "x": 950, "y": 400 },
-    { "name": "Extra2", "x": 700, "y": 350 },
-    { "name": "Extra3", "x": 450, "y": 400 }
-  ],
-  "initialUnlockedStep": 1
+    { "name": "Start", "x": 400, "y": 50, "taskType": "flashcards", "dataset": "flashcards_set1.json", "step": 1 },
+    { "name": "Check", "x": 650, "y": 130, "taskType": "mcq", "dataset": "mcq_set1.json", "step": 2 },
+    { "name": "Review", "x": 900, "y": 50, "taskType": "flashcards", "dataset": "flashcards_set1.json", "step": 3 },
+    { "name": "Finish", "x": 1050, "y": 225, "taskType": "mcq", "dataset": "mcq_set1.json", "step": 4 },
+    { "name": "Extra1", "x": 950, "y": 400, "taskType": "flashcards", "dataset": "flashcards_set1.json", "step": 5 },
+    { "name": "Extra2", "x": 700, "y": 350, "taskType": "mcq", "dataset": "mcq_set1.json", "step": 6 },
+    { "name": "Extra3", "x": 450, "y": 400, "taskType": "flashcards", "dataset": "flashcards_set1.json", "step": 7 }
+  ]
 }
