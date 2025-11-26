@@ -1,50 +1,56 @@
 .mcq-container {
     margin: 1rem auto;
-    padding: 1rem;
-    border: 1px solid #555; /* Darker border for dark theme */
-    border-radius: 8px;
-    width: 400px; /* Same width as flashcard for consistency */
-    background-color: #333; /* Dark background */
-    color: gainsboro; /* Light text color */
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    width: 400px;
+    background-color: var(--surface-color);
+    color: var(--text-color);
     text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .mcq-question {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
 }
 
 .mcq-option-button {
     display: block;
-    width: 100%; /* Make buttons take full width */
-    margin: 0.5rem 0; /* Slightly more margin */
-    padding: 0.8rem 1rem; /* Slightly more padding */
-    border: 1px solid #888;
-    border-radius: 4px;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
     cursor: pointer;
     font-size: 1rem;
-    transition: background-color 0.2s ease, color 0.2s ease;
-    /* Default state */
-    background-color: #555; /* Darker button */
-    color: gainsboro; /* Light text */
+    text-align: left;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    background-color: transparent;
+    color: var(--text-color);
 }
 
-.mcq-option-button:hover {
-    background-color: #777; /* Lighter on hover */
+.mcq-option-button:not(:disabled):hover {
+    border-color: var(--accent-color);
+    background-color: rgba(100, 108, 255, 0.1); /* accent color with alpha */
 }
 
 /* Styles for correct/incorrect answers */
 .mcq-option-button.correct {
-    background-color: #4CAF50; /* Green */
+    border-color: #4CAF50;
+    background-color: #4CAF50;
     color: white;
 }
 
 .mcq-option-button.incorrect {
-    background-color: #f44336; /* Red */
+    border-color: #f44336;
+    background-color: #f44336;
     color: white;
 }
 
 .mcq-feedback {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     font-weight: bold;
+    font-size: 1.1em;
 }
