@@ -1,0 +1,11 @@
+deck = [
+  {
+    id: 1,
+    front: {html: <div>What is the capital of Alaska?</div>},
+    back: {html: <div>Juneau</div>},
+  },
+  {
+    id: 2,
+    front: {html: <div>What is the capital of California?</div>},
+    back: {html: <div>Sacramento</div>},
+  }
