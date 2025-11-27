@@ -34,11 +34,7 @@ export default function HelpPage() {
                         </dl>
                     </section>
                 </div>
-                <div className="card__footer">
-                    <div className="callout callout--info">
-                        <p><strong>Tipp:</strong> Bleiben Sie am Ball! Regelmässiges Üben führt zum besten Lernerfolg.</p>
-                    </div>
-                </div>
+
             </div>
         </div>
     );

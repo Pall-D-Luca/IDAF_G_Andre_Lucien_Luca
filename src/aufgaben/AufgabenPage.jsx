@@ -3,16 +3,7 @@ import { useLocation, useNavigate, Link } from 'react-router-dom';
 
 import FlashCard from './FlashCard.jsx';
 import MCQ from './multipleChoice.jsx';
-
-// A generic progress bar component, styled to match the others
-const ProgressBar = ({ current, total }) => {
-    const progress = total > 0 ? ((current + 1) / total) * 100 : 0;
-    return (
-        <div className="progress-bar">
-            <div className="progress-bar__indicator" style={{ width: `${progress}%` }}></div>
-        </div>
-    );
-};
+import stepsData from '../home/progressbar.json';
 
 const datasetImporter = (datasetName) => {
     // This map ensures Vite can find all possible dynamic imports at build time
@@ -26,28 +17,26 @@ const datasetImporter = (datasetName) => {
     }
 };
 
-export default function AufgabenPage({ setUnlockedStep }) {
+export default function AufgabenPage({ unlockedStep, setUnlockedStep }) {
     const location = useLocation();
     const navigate = useNavigate();
 
+    const [activeTask, setActiveTask] = useState(location.state?.task || null);
     const [taskData, setTaskData] = useState(null);
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [loading, setLoading] = useState(true);
-
-    const task = location.state?.task;
+    const [loading, setLoading] = useState(!!location.state?.task);
 
     useEffect(() => {
-        // Reset state when task changes
         setTaskData(null);
         setCurrentIndex(0);
 
-        if (!task) {
+        if (!activeTask) {
             setLoading(false);
             return;
         }
 
         setLoading(true);
-        datasetImporter(task.dataset)
+        datasetImporter(activeTask.dataset)
             .then(module => {
                 setTaskData(module.default);
                 setLoading(false);
@@ -57,12 +46,20 @@ export default function AufgabenPage({ setUnlockedStep }) {
                 setLoading(false);
             });
 
-    }, [task]);
+    }, [activeTask]);
 
     const handleComplete = () => {
-        // Update the global unlocked step state.
-        setUnlockedStep(prev => Math.max(prev, task.step + 1));
-        navigate('/'); // Go back to the homepage
+        // Only unlock the next step if the user completes the correct one in their learning path
+        if (activeTask && unlockedStep && activeTask.step === unlockedStep) {
+            setUnlockedStep(prev => Math.max(prev, activeTask.step + 1));
+        }
+        
+        // If the user came from the homepage, navigate back. Otherwise, go to task selection.
+        if (location.state?.task) {
+            navigate('/');
+        } else {
+            setActiveTask(null); // Return to the selection screen
+        }
     };
 
     const goToNext = () => {
@@ -83,18 +80,35 @@ export default function AufgabenPage({ setUnlockedStep }) {
         return <div className="page-container text-center"><h2>Lade Aufgabe...</h2></div>;
     }
 
-    if (!task || !taskData) {
+    if (!activeTask) {
         return (
             <div className="page-container text-center">
                 <div className="card">
-                    <div className="card__body">
-                        <h2>Keine Aufgabe ausgewählt</h2>
-                        <p>Bitte kehren Sie zur Startseite zurück, um eine Aufgabe zu wählen.</p>
-                        <Link to="/" className="btn btn--primary mt-lg">Zurück zur Startseite</Link>
+                    <div className="card__header">
+                        <h3>Wählen Sie eine Aufgabe aus</h3>
                     </div>
+                    <div className="card__body" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                        {stepsData.steps.map(step => (
+                            <button
+                                key={step.step}
+                                onClick={() => setActiveTask(step)}
+                                className="btn btn--secondary"
+                            >
+                                {step.name}
+                            </button>
+                        ))}
+                    </div>
+                     <div className="card__footer">
+                        <p>Wählen Sie eine beliebige Aufgabe zum Üben aus.</p>
+                     </div>
                 </div>
             </div>
         );
+    }
+    
+    if (!taskData) {
+        // This can happen briefly between activeTask being set and data loading.
+        return <div className="page-container text-center"><h2>Lade Aufgabendaten...</h2></div>;
     }
 
     const currentItem = taskData[currentIndex];
@@ -102,20 +116,28 @@ export default function AufgabenPage({ setUnlockedStep }) {
     return (
         <div className="page-container aufgaben-page">
             <header className="page-header text-center">
-                <h1>{task.name}</h1>
+                <h1>{activeTask.name}</h1>
                 <p className="aufgaben-page__progress">Frage {currentIndex + 1} von {taskData.length}</p>
             </header>
 
             <div className="card">
                 <div className="card__body">
-                    {task.taskType === 'flashcards' && <FlashCard key={currentItem.id} card={currentItem} />}
-                    {task.taskType === 'mcq' && <MCQ key={currentItem.id} question={currentItem.question} options={currentItem.options} correct={currentItem.correct} />}
+                    {activeTask.taskType === 'flashcards' && <FlashCard key={currentItem.id} card={currentItem} />}
+                    {activeTask.taskType === 'mcq' && <MCQ key={currentItem.id} question={currentItem.question} options={currentItem.options} correct={currentItem.correct} />}
                 </div>
 
                 <div className="card__footer aufgaben-page__controls">
                     <button onClick={goToPrev} disabled={currentIndex === 0} className="btn btn--secondary">
                         Zurück
                     </button>
+                    
+                    {/* Show 'Back to Selection' button if not on a formal learning path step */}
+                    {!location.state?.task && (
+                         <button onClick={() => setActiveTask(null)} className="btn btn--secondary">
+                            Zurück zur Auswahl
+                         </button>
+                    )}
+
                     <button onClick={goToNext} className="btn btn--primary">
                         {taskData && currentIndex === taskData.length - 1 ? 'Abschliessen' : 'Weiter'}
                     </button>

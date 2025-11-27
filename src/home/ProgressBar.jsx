@@ -46,7 +46,7 @@ export default function ProgressBar({ steps, unlockedStep, onStepClick, isMobile
                             cx={displayX}
                             cy={displayY}
                             r={circleRadius}
-                            fill={isActive ? "blue" : (isNext ? "lightblue" : "white")}
+                            fill={isActive ? "blue" : (isNext ? "lightblue" : "lightgrey")}
                             stroke={isActive || isNext ? "blue" : "lightgrey"}
                             strokeWidth={strokeWidth / 2} 
                         />
