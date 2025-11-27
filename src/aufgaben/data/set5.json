@@ -1,0 +1,16 @@
+[
+  {
+    "id": 10,
+    "type": "hybrid",
+    "front": { "html": "<div>Welches Logo ist auf diesem Bild zu sehen?<br/><img src='/vite.svg' alt='Vite Logo' style='width:100px; height:100px; margin-top:1rem; background-color: #333; padding: 10px; border-radius: 10px;'/></div>" },
+    "back": { "html": "<div>Das ist das Logo von <strong>Vite</strong>. Es ist ein modernes Build-Tool für die Web-Entwicklung.</div>" },
+    "options": ["Vite", "React", "Vue", "Svelte"],
+    "correct": "Vite"
+  },
+  {
+    "id": 11,
+    "type": "hybrid",
+    "front": { "html": "<div>Was ist der Zweck einer 'key'-Prop in React?<br/><img src='/react.svg' alt='React Logo' style='width:100px; height:100px; margin-top:1rem;'/></div>" },
+    "back": { "html": "<div>Der 'key' hilft React dabei, Elemente in einer Liste zu identifizieren, wenn sich die Liste ändert. Dies optimiert das Rendern und vermeidet Fehler bei der Zustandsverwaltung." }
+  }
+]

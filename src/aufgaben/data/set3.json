@@ -1,0 +1,21 @@
+[
+  {
+    "id": 5,
+    "type": "flashcard",
+    "front": { "html": "<div>Was ist die Hauptstadt der Schweiz?</div>" },
+    "back": { "html": "<div>Bern</div>" }
+  },
+  {
+    "id": 6,
+    "type": "flashcard",
+    "front": { "html": "<div>Wie viele Kantone hat die Schweiz?</div>" },
+    "back": { "html": "<div>26</div>" }
+  },
+  {
+    "id": 7,
+    "type": "mcq",
+    "question": "Welcher dieser Flüsse fliesst durch die Schweiz?",
+    "options": ["Donau", "Rhein", "Wolga", "Themse"],
+    "correct": "Rhein"
+  }
+]

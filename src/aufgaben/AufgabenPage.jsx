@@ -3,19 +3,25 @@ import { useLocation, useNavigate, Link } from 'react-router-dom';
 
 import FlashCard from './FlashCard.jsx';
 import MCQ from './multipleChoice.jsx';
+import HybridCard from './HybridCard.jsx';
 import stepsData from '../home/progressbar.json';
 
 const datasetImporter = (datasetName) => {
     // This map ensures Vite can find all possible dynamic imports at build time
     switch (datasetName) {
-        case 'flashcards_set1.json':
-            return import('./flashcards_set1.json');
-        case 'mcq_set1.json':
-            return import('./mcq_set1.json');
+        case 'data/set1.json':
+            return import('./data/set1.json');
+        case 'data/set2.json':
+            return import('./data/set2.json');
+        case 'data/set3.json':
+            return import('./data/set3.json');
+        case 'data/set5.json':
+            return import('./data/set5.json');
         default:
             return Promise.reject(new Error(`Unknown dataset: ${datasetName}`));
     }
 };
+
 
 export default function AufgabenPage({ unlockedStep, setUnlockedStep }) {
     const location = useLocation();
@@ -122,8 +128,9 @@ export default function AufgabenPage({ unlockedStep, setUnlockedStep }) {
 
             <div className="card">
                 <div className="card__body">
-                    {activeTask.taskType === 'flashcards' && <FlashCard key={currentItem.id} card={currentItem} />}
-                    {activeTask.taskType === 'mcq' && <MCQ key={currentItem.id} question={currentItem.question} options={currentItem.options} correct={currentItem.correct} />}
+                    {currentItem.type === 'flashcard' && <FlashCard key={currentItem.id} card={currentItem} />}
+                    {currentItem.type === 'mcq' && <MCQ key={currentItem.id} question={currentItem.question} options={currentItem.options} correct={currentItem.correct} />}
+                    {currentItem.type === 'hybrid' && <HybridCard key={currentItem.id} card={currentItem} />}
                 </div>
 
                 <div className="card__footer aufgaben-page__controls">

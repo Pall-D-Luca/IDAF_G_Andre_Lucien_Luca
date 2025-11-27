@@ -310,6 +310,12 @@ a:hover {
   border-color: var(--color-error);
 }
 
+.callout--neutral {
+  background-color: var(--color-background); /* Use a very light grey from theme */
+  border-color: var(--color-border); /* Use a neutral border from theme */
+  color: var(--color-text);
+}
+
 /* === 5. COMPONENT-SPECIFIC STYLES === */
 
 /* Help Page */
