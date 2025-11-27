@@ -1,15 +1,7 @@
-/*
----
-SWISS FEDERAL DESIGN SYSTEM
----
-A modern, professional CSS design system inspired by the premium, clean aesthetic
-of the Swiss government (Bundesrat level).
-*/
 
-/* === 1. CSS VARIABLES (THEME & TOKENS) === */
 :root {
   /* Colors */
-  --color-primary: #D31F2A; /* Swiss Red */
+  --color-primary: #D31F2A;
   --color-primary-dark: #A81921;
   --color-primary-light: #E9E3E3;
   --color-text: #1A1A1A;
@@ -19,11 +11,10 @@ of the Swiss government (Bundesrat level).
   --color-surface: #FFFFFF;
   --color-border: #E0E0E0;
   --color-success: #28a745;
-  --color-success-light: #e0ffe0; /* A lighter green for solved buttons */
+  --color-success-light: #e0ffe0;
   --color-warning: #ffc107;
   --color-error: #dc3545;
 
-  /* Typography */
   --font-family-sans: 'Helvetica Neue', Arial, sans-serif;
   --font-family-serif: 'Georgia', serif;
   --font-size-sm: 0.8rem;
@@ -37,7 +28,6 @@ of the Swiss government (Bundesrat level).
   --font-weight-bold: 700;
   --line-height-base: 1.6;
 
-  /* Spacing */
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
   --space-md: 1rem;
@@ -45,21 +35,17 @@ of the Swiss government (Bundesrat level).
   --space-xl: 2rem;
   --space-xxl: 3rem;
 
-  /* Borders & Shadows */
   --border-radius: 4px;
   --border-width: 1px;
   --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
   --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
 
-  /* Transitions */
   --transition-fast: 0.15s ease-in-out;
   --transition-base: 0.3s ease-in-out;
 
-  /* Layout */
   --container-width: 1200px;
 }
 
-/* === 2. GLOBAL STYLES & RESET === */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -111,7 +97,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* === 3. LAYOUT & GRID === */
 .app-container {
   width: 100%;
   max-width: var(--container-width);
@@ -133,9 +118,6 @@ a:hover {
   .grid--3-cols { grid-template-columns: repeat(3, 1fr); }
 }
 
-/* === 4. COMPONENTS === */
-
-/* App Header & Navigation */
 .app-header {
   background-color: var(--color-surface);
   border-bottom: var(--border-width) solid var(--color-border);
@@ -192,8 +174,6 @@ a:hover {
 .nav__link.active::after {
   transform: scaleX(1);
 }
-
-/* Buttons */
 .btn {
   display: inline-block;
   padding: var(--space-sm) var(--space-lg);
@@ -235,16 +215,14 @@ a:hover {
   cursor: not-allowed;
 }
 
-/* Style for solved buttons on AufgabenPage */
 .btn--solved {
   border-color: var(--color-success);
 }
 .btn--solved:hover {
   background-color: var(--color-success);
-  color: var(--color-text-on-primary); /* Changed to text-on-primary for consistency with primary buttons */
+  color: var(--color-text-on-primary);
 }
 
-/* Cards */
 .card {
   background-color: var(--color-surface);
   border: var(--border-width) solid var(--color-border);
@@ -276,7 +254,6 @@ a:hover {
   font-size: var(--font-size-sm);
 }
 
-/* Forms */
 .form-group {
   margin-bottom: var(--space-md);
 }
@@ -301,7 +278,6 @@ a:hover {
   box-shadow: 0 0 0 3px var(--color-primary-light);
 }
 
-/* Callout Box */
 .callout {
   padding: var(--space-lg);
   border-radius: var(--border-radius);
@@ -321,14 +297,11 @@ a:hover {
 }
 
 .callout--neutral {
-  background-color: var(--color-background); /* Use a very light grey from theme */
-  border-color: var(--color-border); /* Use a neutral border from theme */
+  background-color: var(--color-background);
+  border-color: var(--color-border);
   color: var(--color-text);
 }
 
-/* === 5. COMPONENT-SPECIFIC STYLES === */
-
-/* Help Page */
 .help-page dl {
   margin-top: var(--space-lg);
 }
@@ -342,7 +315,6 @@ a:hover {
   color: var(--color-text-light);
 }
 
-/* Aufgaben Page */
 .aufgaben-page__progress {
   text-align: center;
   font-size: var(--font-size-md);
@@ -357,14 +329,12 @@ a:hover {
   padding-top: var(--space-lg);
 }
 
-/* MCQ */
 .mcq-options {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-sm);
 }
 .mcq-option-btn {
-  /* Use secondary button style as a base */
   display: block;
   width: 100%;
   text-align: left;
@@ -390,18 +360,16 @@ a:hover {
   font-weight: var(--font-weight-bold);
 }
 
-/* === 6. UTILITY CLASSES === */
 .text-center { text-align: center; }
 .mt-lg { margin-top: var(--space-lg); }
 .mb-lg { margin-bottom: var(--space-lg); }
 
-/* Flashcard (Corrected) */
 .flashcard-container {
     perspective: 1000px;
     width: 100%;
     max-width: 600px;
     height: 350px;
-    margin: var(--space-lg) auto; /* Centers the card horizontally */
+    margin: var(--space-lg) auto;
     cursor: pointer;
 }
 
@@ -421,7 +389,7 @@ a:hover {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* For Safari */
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     display: flex;
     justify-content: center;
@@ -434,11 +402,10 @@ a:hover {
     color: var(--color-text);
     background-color: var(--color-surface);
     box-shadow: var(--shadow-md);
-    transition: all 0.3s ease; /* For hover effects */
+    transition: all 0.3s ease;
 }
 
 .flashcard-front {
-    /* Front face is default, nothing special here */
 }
 
 .flashcard-back {

@@ -1,0 +1,79 @@
+[
+  {
+    "id": 90,
+    "type": "flashcard",
+    "front": { "html": "<div>Was ist die Hauptaufgabe der Bundeskanzlei?</div>" },
+    "back": { "html": "<div>Die Bundeskanzlei unterstützt den Bundesrat organisatorisch, bereitet Sitzungen vor, koordiniert Botschaften ans Parlament und informiert die Öffentlichkeit.</div>" }
+  },
+  {
+    "id": 91,
+    "type": "mcq",
+    "question": "Wer leitet die Bundeskanzlei?",
+    "options": ["Bundeskanzler", "Bundespräsident", "Bundesrat", "Parlamentspräsident"],
+    "correct": "Bundeskanzler"
+  },
+  {
+    "id": 92,
+    "type": "flashcard",
+    "front": { "html": "<div>Wie viele Hauptabteilungen gibt es in der Bundeskanzlei?</div>" },
+    "back": { "html": "<div>Es gibt mehrere Hauptabteilungen, z.B. Kanzlei, Kommunikation, Parlamentsdienste, IT & Organisation.</div>" }
+  },
+  {
+    "id": 93,
+    "type": "mcq",
+    "question": "Welche Funktion hat die Bundeskanzlei gegenüber dem Parlament?",
+    "options": [
+      "Verbindet Bundesrat und Parlament, bereitet Botschaften vor",
+      "Setzt Gesetze um",
+      "Kontrolliert die Kantone",
+      "Führt Volksabstimmungen durch"
+    ],
+    "correct": "Verbindet Bundesrat und Parlament, bereitet Botschaften vor"
+  },
+  {
+    "id": 94,
+    "type": "flashcard",
+    "front": { "html": "<div>Funfact: Die Bundeskanzlei organisiert ein besonderes Ereignis jedes Jahr. Welches?</div>" },
+    "back": { "html": "<div>Sie organisiert die <strong>Bundesratsmedienkonferenz</strong> und den offiziellen <strong>Neujahrsapéro</strong> des Bundesrats, um Öffentlichkeit und Medien zu informieren.</div>" }
+  },
+  {
+    "id": 95,
+    "type": "hybrid",
+    "front": { "html": "<div>Zeige ein Bild des Bundeskanzlerbüros. Frage: Wer arbeitet hier und welche Funktion hat er?</div>" },
+    "back": { "html": "<div>Hier arbeitet der Bundeskanzler, der die Bundeskanzlei leitet und den Bundesrat unterstützt.</div>" },
+    "options": ["Bundeskanzler", "Bundespräsident", "Parlamentspräsident", "Bundesrat"],
+    "correct": "Bundeskanzler"
+  },
+  {
+    "id": 96,
+    "type": "mcq",
+    "question": "Welche Abteilung der Bundeskanzlei koordiniert die Sitzungen des Bundesrats?",
+    "options": ["Kanzlei", "Kommunikation", "IT & Organisation", "Parlamentsdienste"],
+    "correct": "Kanzlei"
+  },
+  {
+    "id": 97,
+    "type": "flashcard",
+    "front": { "html": "<div>Wie unterstützt die Bundeskanzlei die Medienarbeit des Bundesrats?</div>" },
+    "back": { "html": "<div>Sie organisiert Pressekonferenzen, veröffentlicht Mitteilungen, verwaltet Social Media und informiert die Bevölkerung transparent.</div>" }
+  },
+  {
+    "id": 98,
+    "type": "mcq",
+    "question": "Warum ist die Bundeskanzlei zentral für die Arbeit des Bundesrats?",
+    "options": [
+      "Koordiniert Verwaltung, Kommunikation, Sitzungen und Botschaften",
+      "Entscheidet über Gesetze allein",
+      "Vertritt die Schweiz international",
+      "Überwacht Kantonsbehörden"
+    ],
+    "correct": "Koordiniert Verwaltung, Kommunikation, Sitzungen und Botschaften"
+  },
+  {
+    "id": 99,
+    "type": "flashcard",
+    "front": { "html": "<div>Funfact: Die Bundeskanzlei verwaltet auch historische Dokumente. Welche?</div>" },
+    "back": { "html": "<div>Sie archiviert unter anderem Botschaften, Protokolle der Bundesratssitzungen und historische Dokumente des Bundesrats, was für Forschung und Transparenz wichtig ist.</div>" }
+  }
+]
+

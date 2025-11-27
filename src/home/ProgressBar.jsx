@@ -7,7 +7,7 @@ export default function ProgressBar({ steps, unlockedStep, onStepClick, isMobile
 
     return (
         <svg
-            viewBox={isMobile ? "0 0 400 900" : "0 0 1500 500"} // Adjusted mobile viewBox height
+            viewBox={isMobile ? "0 0 400 1050" : "0 0 1500 500"} // Adjusted mobile viewBox height
             style={{ width: '100%', maxWidth: '1500px', height: 'auto' }}
         >
             {/* Layer 1: All the lines (drawn first, so they are in the back) */}

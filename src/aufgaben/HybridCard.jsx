@@ -59,7 +59,7 @@ export default function HybridCard({ card }) {
                     {showMCQResult && (
                         <div className={`callout ${selected === card.correct ? 'callout--success' : 'callout--error'} mt-lg`}>
                             <strong>{selected === card.correct ? "Richtig!" : "Falsch!"}</strong>
-                            <p style={{ marginTop: '1rem', marginBottom: '0.5rem' }}>Die ausführliche Antwort lautet:</p>
+                            <p style={{ marginTop: '1rem', marginBottom: '0.5rem' }}>Die Antwort ist:</p>
                             <div dangerouslySetInnerHTML={{ __html: card.back.html }} />
                         </div>
                     )}

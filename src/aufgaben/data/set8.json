@@ -1,16 +1,68 @@
 [
   {
-    "id": 10,
-    "type": "hybrid",
-    "front": { "html": "<div>8Welches Logo ist auf diesem Bild zu sehen?<br/><img src='/vite.svg' alt='Vite Logo' style='width:100px; height:100px; margin-top:1rem; background-color: #333; padding: 10px; border-radius: 10px;'/></div>" },
-    "back": { "html": "<div>Das ist das Logo von <strong>Vite</strong>. Es ist ein modernes Build-Tool für die Web-Entwicklung.</div>" },
-    "options": ["Vite", "React", "Vue", "Svelte"],
-    "correct": "Vite"
+    "id": 80,
+    "type": "flashcard",
+    "front": { "html": "<div>Mit wem arbeitet der Bundesrat eng zusammen, um Gesetze umzusetzen?</div>" },
+    "back": { "html": "<div>Mit der Bundesverwaltung, den Departementen, Kantonen und dem Parlament.</div>" }
   },
   {
-    "id": 11,
+    "id": 81,
+    "type": "mcq",
+    "question": "Wie kommuniziert der Bundesrat mit den Kantonen?",
+    "options": ["Direkt über Kantonsregierungen", "Nur über das Parlament", "Nur über Medien", "Gar nicht"],
+    "correct": "Direkt über Kantonsregierungen"
+  },
+  {
+    "id": 82,
+    "type": "flashcard",
+    "front": { "html": "<div>Was ist die Rolle des Bundesrats gegenüber dem Parlament?</div>" },
+    "back": { "html": "<div>Der Bundesrat bereitet Gesetze vor, sendet Botschaften ans Parlament und beantwortet parlamentarische Vorstösse. Er ist die Exekutive.</div>" }
+  },
+  {
+    "id": 83,
+    "type": "mcq",
+    "question": "Wie arbeitet der Bundesrat mit internationalen Organisationen?",
+    "options": ["Er schickt Mitglieder zu Konferenzen", "Nur über Botschafter", "Gar nicht", "Nur über Parteien"],
+    "correct": "Er schickt Mitglieder zu Konferenzen"
+  },
+  {
+    "id": 84,
+    "type": "flashcard",
+    "front": { "html": "<div>Funfact: Wie nennt man die regelmässigen Treffen mit den Kantonen?</div>" },
+    "back": { "html": "<div>Sie heißen <strong>Regierungs- und Verwaltungs-Koordinationstreffen</strong> oder 'Konferenz der Kantonsregierungen' (KdK).</div>" }
+  },
+  {
+    "id": 85,
     "type": "hybrid",
-    "front": { "html": "<div>Was ist der Zweck einer 'key'-Prop in React?<br/><img src='/react.svg' alt='React Logo' style='width:100px; height:100px; margin-top:1rem;'/></div>" },
-    "back": { "html": "<div>Der 'key' hilft React dabei, Elemente in einer Liste zu identifizieren, wenn sich die Liste ändert. Dies optimiert das Rendern und vermeidet Fehler bei der Zustandsverwaltung." }
+    "front": { "html": "<div>Zeige ein Bild einer internationalen Konferenz und frage: In welchem Kontext trifft der Bundesrat andere Staatschefs?</div>" },
+    "back": { "html": "<div>Der Bundesrat trifft andere Staatschefs bei bilateralen oder multilateralen Konferenzen, z.B. UNO, EU-Assoziationen oder G20-Summits.</div>" },
+    "options": ["Bilaterale Konferenzen", "Nur Schweizer Parlament", "Lokale Kantonsversammlungen", "Parteitage"],
+    "correct": "Bilaterale Konferenzen"
+  },
+  {
+    "id": 86,
+    "type": "mcq",
+    "question": "Wie koordiniert der Bundesrat die Bundesverwaltung?",
+    "options": ["Über die Departemente", "Nur über das Parlament", "Durch externe Berater", "Gar nicht"],
+    "correct": "Über die Departemente"
+  },
+  {
+    "id": 87,
+    "type": "flashcard",
+    "front": { "html": "<div>Wie stellt der Bundesrat sicher, dass kantonale Interessen berücksichtigt werden?</div>" },
+    "back": { "html": "<div>Durch direkte Zusammenarbeit, Konsultationen, Sitzungen der Konferenz der Kantonsregierungen und Einbezug in Gesetzesvorbereitungen.</div>" }
+  },
+  {
+    "id": 88,
+    "type": "mcq",
+    "question": "Welche Rolle spielt die Bundeskanzlei bei der Zusammenarbeit?",
+    "options": ["Koordination zwischen Bundesrat, Parlament und Verwaltung", "Nur Druck von Gesetzen", "Direkte Leitung der Kantone", "Parteipolitische Abstimmungen"],
+    "correct": "Koordination zwischen Bundesrat, Parlament und Verwaltung"
+  },
+  {
+    "id": 89,
+    "type": "flashcard",
+    "front": { "html": "<div>Funfact: Der Bundesrat kommuniziert auch über soziale Medien. Warum ist das interessant?</div>" },
+    "back": { "html": "<div>Er nutzt z. B. Twitter oder YouTube, um direkte Informationen an Bürger zu geben, was die Transparenz erhöht und schnelle Kommunikation ermöglicht.</div>" }
   }
 ]

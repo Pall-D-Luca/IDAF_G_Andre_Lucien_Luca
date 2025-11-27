@@ -1,16 +1,89 @@
 [
   {
-    "id": 3,
+    "id": 20,
     "type": "mcq",
-    "question": "2Which of these is a US state?",
-    "options": ["Ontario", "Texas", "Quebec", "Alberta"],
-    "correct": "Texas"
+    "question": "Wer leitet 2025 das eidgenössisches Departement für auswärtige Angelegenheiten (EDA)?",
+    "options": ["Karin Keller‑Sutter", "Ignazio Cassis", "Beat Jans", "Albert Rösti"],
+    "correct": "Ignazio Cassis"
   },
   {
-    "id": 4,
+    "id": 21,
     "type": "mcq",
-    "question": "Capital of France?",
-    "options": ["Paris", "Berlin", "Rome", "Madrid"],
-    "correct": "Paris"
+    "question": "Wer ist zuständig für Verteidigung, Bevölkerungsschutz und Sport (VBS) 2025?",
+    "options": ["Martin Pfister", "Guy Parmelin", "Karin Keller‑Sutter", "Elisabeth Baume‑Schneider"],
+    "correct": "Martin Pfister"
+  },
+  {
+    "id": 22,
+    "type": "flashcard",
+    "front": { "html": "<div>Wie viele Departemente gibt es in der Schweiz?</div>" },
+    "back": { "html": "<div>Sieben Departemente (plus die Bundeskanzlei).</div>" }
+  },
+  {
+    "id": 23,
+    "type": "mcq",
+    "question": "Welches Departement gehört nicht zur Liste der sieben Bundesdepartemente der Schweiz?",
+    "options": ["Umwelt, Verkehr, Energie, Kommunikation (UVEK)", "Inneres (EDI)", "Justiz & Polizei (EJPD)", "Bildung & Kultur (EBK)"],
+    "correct": "Bildung & Kultur (EBK)"
+  },
+  {
+    "id": 24,
+    "type": "mcq",
+    "question": "Wer leitet 2025 das Finanzdepartement (EFD)?",
+    "options": ["Albert Rösti", "Karin Keller‑Sutter", "Guy Parmelin", "Beat Jans"],
+    "correct": "Karin Keller‑Sutter"
+  },
+  {
+    "id": 25,
+    "type": "mcq",
+    "question": "Welches Departement ist für das Innere zuständig (Gesundheit, Sozialwesen, Statistik)?",
+    "options": ["EDI", "EFD", "EDGS", "VBS"],
+    "correct": "EDI"
+  },
+  {
+    "id": 26,
+    "type": "hybrid",
+    "front": {
+      "html": "<div>Welches Departement leitet diese Bundesrätin?<br/><img src='/keller_sutter.png' alt='Karin Keller-Sutter' style='width:100px;height:100px;margin-top:1rem;'/></div>"
+    },
+    "back": {
+      "html": "<div>Karin Keller-Sutter leitet das Finanzdepartement (EFD) 2025.</div>"
+    },
+    "options": ["EFD", "EDA", "VBS", "EJPD"],
+    "correct": "EFD"
+  },
+  {
+    "id": 27,
+    "type": "mcq",
+    "question": "Was leitet der Guy Parmelin für ein Departement?",
+    "options": ["UVEK", "WBF", "EFD", "EDA"],
+    "correct": "WBF"
+  },
+  {
+    "id": 28,
+    "type": "flashcard",
+    "front": { "html": "<div>Was ist das VBS?</div>" },
+    "back": { "html": "<div>VBS = Verteidigungsdepartement, zuständig für Verteidigung, Bevölkerungsschutz und Sport. Bundesrat: Martin Pfister.</div>" }
+  },
+  {
+    "id": 29,
+    "type": "mcq",
+    "question": "Wer leitet das Justiz- und Polizeidepartement (EJPD)?",
+    "options": ["Beat Jans", "Elisabeth Baume-Schneider", "Albert Rösti", "Guy Parmelin"],
+    "correct": "Beat Jans"
+  },
+  {
+    "id": 201,
+    "type": "flashcard",
+    "front": { "html": "<div>Was ist das UVEK?</div>" },
+    "back": { "html": "<div>UVEK = Umwelt, Verkehr, Energie und Kommunikation. Bundesrat : Albert Rösti.</div>" }
+  },
+  {
+    "id": 202 ,
+    "type": "mcq",
+    "question": "Welches Departement kümmert sich um Energiepolitik und Verkehrsinfrastruktur?",
+    "options": ["UVEK", "VBS", "EDA", "EFD"],
+    "correct": "UVEK"
   }
 ]
+

@@ -1,16 +1,69 @@
 [
   {
-    "id": 10,
-    "type": "hybrid",
-    "front": { "html": "<div> 6Welches Logo ist auf diesem Bild zu sehen?<br/><img src='/vite.svg' alt='Vite Logo' style='width:100px; height:100px; margin-top:1rem; background-color: #333; padding: 10px; border-radius: 10px;'/></div>" },
-    "back": { "html": "<div>Das ist das Logo von <strong>Vite</strong>. Es ist ein modernes Build-Tool für die Web-Entwicklung.</div>" },
-    "options": ["Vite", "React", "Vue", "Svelte"],
-    "correct": "Vite"
+    "id": 60,
+    "type": "flashcard",
+    "front": { "html": "<div>Wie oft tagt der Bundesrat in der Regel?</div>" },
+    "back": { "html": "<div>Der Bundesrat tagt in der Regel einmal pro Woche, meist am Mittwoch.</div>" }
   },
   {
-    "id": 11,
+    "id": 61,
+    "type": "mcq",
+    "question": "Wer bereitet die Traktanden (Tagesordnung) für die Bundesratssitzung vor?",
+    "options": ["Bundespräsident", "Bundeskanzlei", "Parlament", "Bundesgericht"],
+    "correct": "Bundeskanzlei"
+  },
+  {
+    "id": 62,
+    "type": "flashcard",
+    "front": { "html": "<div>Was passiert während der Diskussionen in der Sitzung?</div>" },
+    "back": { "html": "<div>Die Bundesräte besprechen Geschäfte, prüfen Gesetzesvorlagen, bereiten Botschaften ans Parlament vor und treffen Entscheidungen im Kollegium.</div>" }
+  },
+  {
+    "id": 63,
+    "type": "mcq",
+    "question": "Wie werden Beschlüsse gefasst?",
+    "options": ["Mehrheitsentscheid unter Bundesräten", "Einzelentscheidung des Bundespräsidenten", "Volksabstimmung in der Sitzung", "Zufallsprinzip"],
+    "correct": "Mehrheitsentscheid unter Bundesräten"
+  },
+  {
+    "id": 64,
+    "type": "flashcard",
+    "front": { "html": "<div>Was ist das Kollegialprinzip in Bezug auf Sitzungsergebnisse?</div>" },
+    "back": { "html": "<div>Alle Bundesräte müssen die Beschlüsse gemeinsam tragen, auch wenn sie persönlich anderer Meinung waren.</div>" }
+  },
+  {
+    "id": 65,
     "type": "hybrid",
-    "front": { "html": "<div>Was ist der Zweck einer 'key'-Prop in React?<br/><img src='/react.svg' alt='React Logo' style='width:100px; height:100px; margin-top:1rem;'/></div>" },
-    "back": { "html": "<div>Der 'key' hilft React dabei, Elemente in einer Liste zu identifizieren, wenn sich die Liste ändert. Dies optimiert das Rendern und vermeidet Fehler bei der Zustandsverwaltung." }
+    "front": { "html": "<div>Zeige ein Bild vom Bundesratssaal und frage: Wo finden die Sitzungen statt?</div>" },
+    "back": { "html": "<div>Die Sitzungen finden im <strong>Bundesratssaal im Bundeshaus in Bern</strong> statt.</div>" },
+    "options": ["Bundeshaus Bern", "Parlament Zürich", "Bundesgericht Lausanne"],
+    "correct": "Bundeshaus Bern"
+  },
+  {
+    "id": 66,
+    "type": "mcq",
+    "question": "Wer protokolliert die Beschlüsse der Bundesratssitzung?",
+    "options": ["Bundeskanzlei", "Bundespräsident", "Parlament", "Bundesgericht"],
+    "correct": "Bundeskanzlei"
+  },
+  {
+    "id": 67,
+    "type": "flashcard",
+    "front": { "html": "<div>Funfact: Gibt es öffentliche Sitzungen des Bundesrats?</div>" },
+    "back": { "html": "<div>Nein, die Sitzungen sind grundsätzlich vertraulich, damit offene Diskussionen möglich sind. Es werden nur Beschlüsse und Botschaften veröffentlicht.</div>" }
+  },
+  {
+    "id": 68,
+    "type": "mcq",
+    "question": "Wie werden Dringlichkeitsgeschäfte behandelt?",
+    "options": ["Sie werden sofort beschlossen", "Sie müssen eine Woche warten", "Sie werden an das Parlament delegiert", "Sie dürfen nicht behandelt werden"],
+    "correct": "Sie werden sofort beschlossen"
+  },
+  {
+    "id": 69,
+    "type": "flashcard",
+    "front": { "html": "<div>Welche Rolle spielt der Bundespräsident während der Sitzung?</div>" },
+    "back": { "html": "<div>Er leitet die Sitzung, sorgt für Ordnung, hat jedoch kein Sonderrecht; alle Entscheidungen sind kollektiv.</div>" }
   }
 ]
+

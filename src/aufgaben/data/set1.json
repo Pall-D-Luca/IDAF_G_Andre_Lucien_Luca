@@ -1,14 +1,132 @@
 [
   {
-    "id": 1,
-    "type": "flashcard",
-    "front": { "html": "<div>1What is the capital of Alaska?</div>" },
-    "back": { "html": "<div>Juneau</div>" }
+    "id": 10,
+    "type": "hybrid",
+    "front": {
+      "html": "<div>Willkommen in den Bundesrat Crashkurs!</div>"
+    },
+    "back": {
+      "html": "<div>In dieser Einheit geht es um die 7 Bundesräte der Schweiz.</div>"
+    }
   },
   {
-    "id": 2,
-    "type": "flashcard",
-    "front": { "html": "<div>What is the capital of California?</div>" },
-    "back": { "html": "<div>Sacramento</div>" }
+    "id": 11,
+    "type": "hybrid",
+    "front": {
+      "html": "<div>Wer ist das?<br/><img src='/keller_sutter.png' alt='Karin Keller-Sutter' style='width:100px; height:100px; margin-top:1rem;'/></div>"
+    },
+    "back": {
+      "html": "<div><b>Karin Keller-Sutter</b><br/>Departement: EFD (Finanzen)<br/>Heimatkanton: St. Gallen</br>Bundespräsidentin</div>"
+    },
+    "options": [
+      "Karin Keller-Sutter",
+      "Elisabeth Baume-Schneider",
+      "Guy Parmelin",
+      "Albert Rösti"
+    ],
+    "correct": "Karin Keller-Sutter"
+  },
+  {
+    "id": 12,
+    "type": "hybrid",
+    "front": {
+      "html": "<div>Wer ist das?<br/><img src='/header_ignazio_cassis_386x391.png' alt='Ignazio Cassis' style='width:100px; height:100px; margin-top:1rem;'/></div>"
+    },
+    "back": {
+      "html": "<div><b>Ignazio Cassis</b><br/>Departement: EDA (Auswärtige Angelegenheiten)<br/>Heimatkanton: Tessin</div>"
+    },
+    "options": [
+      "Ignazio Cassis",
+      "Guy Parmelin",
+      "Beat Jans",
+      "Albert Rösti"
+    ],
+    "correct": "Ignazio Cassis"
+  },
+  {
+    "id": 13,
+    "type": "hybrid",
+    "front": {
+      "html": "<div>Wer ist das?<br/><img src='/header_guy_parmelin_386x391.png' alt='Guy Parmelin' style='width:100px; height:100px; margin-top:1rem;'/></div>"
+    },
+    "back": {
+      "html": "<div><b>Guy Parmelin</b><br/>Departement: WBF (Wirtschaft, Bildung, Forschung)<br/>Heimatkanton: Waadt</div>"
+    },
+    "options": [
+      "Guy Parmelin",
+      "Elisabeth Baume-Schneider",
+      "Beat Jans",
+      "Martin Pfister"
+    ],
+    "correct": "Guy Parmelin"
+  },
+  {
+    "id": 14,
+    "type": "hybrid",
+    "front": {
+      "html": "<div>Wer ist das?<br/><img src='/header_elisabeth_baume-schneider_386x391.png' alt='Elisabeth Baume-Schneider' style='width:100px; height:100px; margin-top:1rem;'/></div>"
+    },
+    "back": {
+      "html": "<div><b>Elisabeth Baume-Schneider</b><br/>Departement: EDI (Inneres)<br/>Heimatkanton: Jura</div>"
+    },
+    "options": [
+      "Elisabeth Baume-Schneider",
+      "Karin Keller-Sutter",
+      "Ignazio Cassis",
+      "Albert Rösti"
+    ],
+    "correct": "Elisabeth Baume-Schneider"
+  },
+  {
+    "id": 15,
+    "type": "hybrid",
+    "front": {
+      "html": "<div>Wer ist das?<br/><img src='/header_albert_roesti_386x391.png' alt='Albert Rösti' style='width:100px; height:100px; margin-top:1rem;'/></div>"
+    },
+    "back": {
+      "html": "<div><b>Albert Rösti</b><br/>Departement: UVEK (Umwelt, Verkehr, Energie, Kommunikation)<br/>Heimatkanton: Bern</div>"
+    },
+    "options": [
+      "Albert Rösti",
+      "Guy Parmelin",
+      "Beat Jans",
+      "Ignazio Cassis"
+    ],
+    "correct": "Albert Rösti"
+  },
+  {
+    "id": 16,
+    "type": "hybrid",
+    "front": {
+      "html": "<div>Wer ist das?<br/><img src='/header_beat_jans_386x391.png' alt='Beat Jans' style='width:100px; height:100px; margin-top:1rem;'/></div>"
+    },
+    "back": {
+      "html": "<div><b>Beat Jans</b><br/>Departement: EJPD (Justiz & Polizei)<br/>Heimatkanton: Basel-Stadt</div>"
+    },
+    "options": [
+      "Beat Jans",
+      "Elisabeth Baume-Schneider",
+      "Guy Parmelin",
+      "Martin Pfister"
+    ],
+    "correct": "Beat Jans"
+  },
+  {
+    "id": 17,
+    "type": "hybrid",
+    "front": {
+      "html": "<div>Wer ist das?<br/><img src='/header_martin_pfister_386x391.png' alt='Martin Pfister' style='width:100px; height:100px; margin-top:1rem;'/></div>"
+    },
+    "back": {
+      "html": "<div><b>Martin Pfister</b><br/>Departement: VBS (Verteidigung, Bevölkerungsschutz, Sport)<br/>Heimatkanton: Zug</div>"
+    },
+    "options": [
+      "Martin Pfister",
+      "Guy Parmelin",
+      "Albert Rösti",
+      "Ignazio Cassis"
+    ],
+    "correct": "Martin Pfister"
   }
 ]
+

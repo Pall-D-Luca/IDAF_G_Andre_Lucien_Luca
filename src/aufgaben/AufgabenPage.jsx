@@ -25,6 +25,8 @@ const datasetImporter = (datasetName) => {
             return import('./data/set7.json');
         case 'data/set8.json':
             return import('./data/set8.json');
+        case 'data/set9.json':
+            return import('./data/set9.json');
         default:
             return Promise.reject(new Error(`Unknown dataset: ${datasetName}`));
     }
