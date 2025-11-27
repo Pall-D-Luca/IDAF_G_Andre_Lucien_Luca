@@ -1,12 +1,12 @@
 {
   "steps": [
-    { "name": "Start", "x": 400, "y": 50, "mobile_x": 200, "mobile_y": 50, "taskType": "mixed", "dataset": "data/set1.json", "step": 1 },
-    { "name": "Check", "x": 650, "y": 130, "mobile_x": 200, "mobile_y": 150, "taskType": "mixed", "dataset": "data/set2.json", "step": 2 },
-    { "name": "Review", "x": 900, "y": 50, "mobile_x": 200, "mobile_y": 250, "taskType": "mixed", "dataset": "data/set5.json", "step": 3 },
-    { "name": "Finish", "x": 1050, "y": 225, "mobile_x": 200, "mobile_y": 350, "taskType": "mixed", "dataset": "data/set2.json", "step": 4 },
-    { "name": "Extra1", "x": 950, "y": 400, "mobile_x": 200, "mobile_y": 450, "taskType": "mixed", "dataset": "data/set1.json", "step": 5 },
-    { "name": "Extra2", "x": 700, "y": 350, "mobile_x": 200, "mobile_y": 550, "taskType": "mixed", "dataset": "data/set2.json", "step": 6 },
-    { "name": "Extra3", "x": 450, "y": 400, "mobile_x": 200, "mobile_y": 650, "taskType": "mixed", "dataset": "data/set1.json", "step": 7 },
-    { "name": "Mixed", "x": 200, "y": 250, "mobile_x": 200, "mobile_y": 750, "taskType": "mixed", "dataset": "data/set3.json", "step": 8 }
+    { "name": "Titel 1", "x": 400, "y": 50, "mobile_x": 200, "mobile_y": 50, "taskType": "mixed", "dataset": "data/set1.json", "step": 1 },
+    { "name": "Title 2", "x": 650, "y": 130, "mobile_x": 200, "mobile_y": 150, "taskType": "mixed", "dataset": "data/set2.json", "step": 2 },
+    { "name": "Titel 3", "x": 900, "y": 50, "mobile_x": 200, "mobile_y": 250, "taskType": "mixed", "dataset": "data/set3.json", "step": 3 },
+    { "name": "Titel 4", "x": 1050, "y": 225, "mobile_x": 200, "mobile_y": 350, "taskType": "mixed", "dataset": "data/set4.json", "step": 4 },
+    { "name": "Titel 5", "x": 950, "y": 400, "mobile_x": 200, "mobile_y": 450, "taskType": "mixed", "dataset": "data/set5.json", "step": 5 },
+    { "name": "Titel 6", "x": 700, "y": 350, "mobile_x": 200, "mobile_y": 550, "taskType": "mixed", "dataset": "data/set6.json", "step": 6 },
+    { "name": "Titel 7", "x": 450, "y": 400, "mobile_x": 200, "mobile_y": 650, "taskType": "mixed", "dataset": "data/set7.json", "step": 7 },
+    { "name": "Titel 8", "x": 200, "y": 250, "mobile_x": 200, "mobile_y": 750, "taskType": "mixed", "dataset": "data/set8.json", "step": 8 }
   ]
 }

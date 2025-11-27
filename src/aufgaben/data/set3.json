@@ -2,7 +2,7 @@
   {
     "id": 5,
     "type": "flashcard",
-    "front": { "html": "<div>Was ist die Hauptstadt der Schweiz?</div>" },
+    "front": { "html": "<div>3Was ist die Hauptstadt der Schweiz?</div>" },
     "back": { "html": "<div>Bern</div>" }
   },
   {

@@ -2,7 +2,7 @@
   {
     "id": 10,
     "type": "hybrid",
-    "front": { "html": "<div>5Welches Logo ist auf diesem Bild zu sehen?<br/><img src='/vite.svg' alt='Vite Logo' style='width:100px; height:100px; margin-top:1rem; background-color: #333; padding: 10px; border-radius: 10px;'/></div>" },
+    "front": { "html": "<div>7Welches Logo ist auf diesem Bild zu sehen?<br/><img src='/vite.svg' alt='Vite Logo' style='width:100px; height:100px; margin-top:1rem; background-color: #333; padding: 10px; border-radius: 10px;'/></div>" },
     "back": { "html": "<div>Das ist das Logo von <strong>Vite</strong>. Es ist ein modernes Build-Tool für die Web-Entwicklung.</div>" },
     "options": ["Vite", "React", "Vue", "Svelte"],
     "correct": "Vite"
