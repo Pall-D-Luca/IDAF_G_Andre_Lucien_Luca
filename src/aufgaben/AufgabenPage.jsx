@@ -94,18 +94,21 @@ export default function AufgabenPage({ unlockedStep, setUnlockedStep }) {
                         <h3>Wählen Sie eine Aufgabe aus</h3>
                     </div>
                     <div className="card__body" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                        {stepsData.steps.map(step => (
-                            <button
-                                key={step.step}
-                                onClick={() => setActiveTask(step)}
-                                className="btn btn--secondary"
-                            >
-                                {step.name}
-                            </button>
-                        ))}
+                        {stepsData.steps.map(step => {
+                            const isSolved = step.step < unlockedStep;
+                            return (
+                                <button
+                                    key={step.step}
+                                    onClick={() => setActiveTask(step)}
+                                    className={`btn btn--secondary ${isSolved ? 'btn--solved' : ''}`}
+                                >
+                                    {step.name}
+                                </button>
+                            );
+                        })}
                     </div>
                      <div className="card__footer">
-                        <p>Wählen Sie eine beliebige Aufgabe zum Üben aus.</p>
+                        <p>Wählen Sie eine beliebige Aufgabe zum Üben aus. Grün markierte Aufgaben wurden im Lernpfad bereits abgeschlossen.</p>
                      </div>
                 </div>
             </div>

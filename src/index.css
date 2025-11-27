@@ -19,6 +19,7 @@ of the Swiss government (Bundesrat level).
   --color-surface: #FFFFFF;
   --color-border: #E0E0E0;
   --color-success: #28a745;
+  --color-success-light: #e0ffe0; /* A lighter green for solved buttons */
   --color-warning: #ffc107;
   --color-error: #dc3545;
 
@@ -232,6 +233,15 @@ a:hover {
 .btn:disabled {
   opacity: 0.6;
   cursor: not-allowed;
+}
+
+/* Style for solved buttons on AufgabenPage */
+.btn--solved {
+  border-color: var(--color-success);
+}
+.btn--solved:hover {
+  background-color: var(--color-success);
+  color: var(--color-text-on-primary); /* Changed to text-on-primary for consistency with primary buttons */
 }
 
 /* Cards */
