@@ -9,7 +9,7 @@
     "id": 32,
     "type": "mcq",
     "question": "Welche Parteien gehören zur Zauberformel (2:2:2:1)?",
-    "options": ["SVP, SP, FDP, Die Mitte", "SVP, SP, FDP, Grüne", "SP, FDP, Die Mitte, CVP", "SVP, FDP, CVP, BDP"],
+    "options": ["SVP, SP, FDP, Die Mitte", "SVP, SP, FDP, Grüne", "SP, FDP, Die Mitte, Grüne", "SVP, FDP, CVP, BDP"],
     "correct": "SVP, SP, FDP, Die Mitte"
   },
   {
@@ -59,12 +59,6 @@
     "question": "Seit wann wird die Zauberformel ungefähr angewandt?",
     "options": ["Seit 1848", "Seit 1959", "Seit 1999", "Seit 2003"],
     "correct": "Seit 1959"
-  },
-  {
-    "id": 30,
-    "type": "flashcard",
-    "front": { "html": "<div>Was sind die Sitzverteilungen laut Zauberformel.</div>" },
-    "back": { "html": "<div>SVP: 2 Sitze, SP: 2 Sitze, FDP: 2 Sitze, Die Mitte: 1 Sitz</div>" }
   }
 ]
 

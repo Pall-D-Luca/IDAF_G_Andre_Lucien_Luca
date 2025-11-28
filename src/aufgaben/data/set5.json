@@ -9,7 +9,7 @@
     "id": 51,
     "type": "mcq",
     "question": "Wie viele Mitglieder hat der Bundesrat?",
-    "options": ["5", "7", "9", "11"],
+    "options": ["5", "7", "9", "8"],
     "correct": "7"
   },
   {
@@ -42,7 +42,7 @@
     "id": 56,
     "type": "mcq",
     "question": "Wie oft rotiert der Bundespräsident in der Schweiz?",
-    "options": ["Jährlich", "Alle 4 Jahre", "Alle 2 Jahre", "Gar nicht"],
+    "options": ["Jährlich", "Alle 4 Jahre", "Alle 2 Jahre", "Alle 1.5 Jahren"],
     "correct": "Jährlich"
   },
   {

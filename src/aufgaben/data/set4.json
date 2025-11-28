@@ -9,21 +9,21 @@
   {
     "id": 41,
     "type": "flashcard",
-    "front": { "html": "<div>In welchem Rechts‑Dokument sind Rechte und Grundsätze für Bürgerinnen und Bürger der Schweiz festgehalten (z. B. Grundrechte, Föderalismus)?</div>" },
-    "back": { "html": "<div>In der <strong> (BV).</div>" }
+    "front": { "html": "<div>In welchem Rechts‑Dokument sind Rechte und Grundsätze für Bürgerinnen und Bürger der Schweiz festgehalten?</div>" },
+    "back": { "html": "<div>In der <strong> Bundesverfassung.</div>" }
   },
   {
     "id": 42,
     "type": "mcq",
     "question": "Welche Rechtsnormen stehen in der Normenhierarchie direkt unter der Verfassung?",
-    "options": ["Gemeinderegelungen", "Bundesgesetze", "Kantonale Verordnungen", "Privatrechtliche Verträge"],
+    "options": ["Gemeinderegelungen", "Kantonale Verordnungen", "Bundesgesetze", "Privatrechtliche Verträge"],
     "correct": "Bundesgesetze"
   },
   {
     "id": 43,
     "type": "mcq",
     "question": "Wer erlässt in der Schweiz Bundesgesetze?",
-    "options": ["Der ", "Das Parlament (Nationalrat & Ständerat)", "Das Volk durch Initiative", "Die Kantone gemeinsam"],
+    "options": ["Der Bundespräsident", "Das Parlament (Nationalrat & Ständerat)", "Das Volk durch Initiative", "Den Nationalrat alleine"],
     "correct": "Das Parlament (Nationalrat & Ständerat)"
   },
   {
@@ -64,7 +64,7 @@
     "id": 49,
     "type": "flashcard",
     "front": { "html": "<div>Welche Funktion hat der Gesetzgebungsprozess in der Schweiz?</div>" },
-    "back": { "html": "<div>Er ergänzt und konkretisiert die Verfassung durch Bundesgesetze und Verordnungen und regelt damit Rechte und Pflichten für Staat und Bürgerinnen und Bürger.</div>" }
+    "back": { "html": "<div>Er ergänzt und konkretisiert die Verfassung durch Bundesgesetze und Verordnungen und regelt damit Rechte und Pflichten für Staat und Bürger.</div>" }
   }
 ]
 

@@ -10,7 +10,7 @@
     "id": 21,
     "type": "mcq",
     "question": "Wer ist zuständig für Verteidigung, Bevölkerungsschutz und Sport (VBS) 2025?",
-    "options": ["Martin Pfister", "Guy Parmelin", "Karin Keller‑Sutter", "Elisabeth Baume‑Schneider"],
+    "options": ["Elisabeth Baume‑Schneider", "Guy Parmelin", "Karin Keller‑Sutter", "Martin Pfister"],
     "correct": "Martin Pfister"
   },
   {
@@ -37,7 +37,7 @@
     "id": 25,
     "type": "mcq",
     "question": "Welches Departement ist für das Innere zuständig (Gesundheit, Sozialwesen, Statistik)?",
-    "options": ["EDI", "EFD", "EDGS", "VBS"],
+    "options": ["EFD", "EDI", "EDGS", "VBS"],
     "correct": "EDI"
   },
   {
@@ -49,7 +49,7 @@
     "back": {
       "html": "<div>Karin Keller-Sutter leitet das Finanzdepartement (EFD) 2025.</div>"
     },
-    "options": ["EFD", "EDA", "VBS", "EJPD"],
+    "options": ["VBS", "EDA", "EFD", "EJPD"],
     "correct": "EFD"
   },
   {
@@ -77,13 +77,6 @@
     "type": "flashcard",
     "front": { "html": "<div>Was ist das UVEK?</div>" },
     "back": { "html": "<div>UVEK = Umwelt, Verkehr, Energie und Kommunikation. Bundesrat : Albert Rösti.</div>" }
-  },
-  {
-    "id": 202 ,
-    "type": "mcq",
-    "question": "Welches Departement kümmert sich um Energiepolitik und Verkehrsinfrastruktur?",
-    "options": ["UVEK", "VBS", "EDA", "EFD"],
-    "correct": "UVEK"
   }
 ]
 

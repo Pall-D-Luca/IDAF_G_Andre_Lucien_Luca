@@ -28,15 +28,15 @@
   {
     "id": 74,
     "type": "flashcard",
-    "front": { "html": "<div>Funfact: Muss ein Bundesrat immer seiner Partei folgen?</div>" },
+    "front": { "html": "<div>Muss ein Bundesrat immer seiner Partei folgen?</div>" },
     "back": { "html": "<div>Nein, im Kollegium gilt die Unabhängigkeit: Bundesräte treffen Entscheidungen nach dem Gesamtwohl, nicht strikt nach Parteilinie.</div>" }
   },
   {
     "id": 75,
     "type": "hybrid",
-    "front": { "html": "<div>Bildfrage: Zeige ein Bild vom Bundesrat bei einer Sitzung und frage: Wie viele Stimmen entscheiden über einen Antrag?</div>" },
+    "front": { "html": "<div>Wie viele Stimmen entscheiden über einen Antrag?</div>" },
     "back": { "html": "<div>Entscheidend ist die Mehrheit der sieben Mitglieder. Jeder Bundesrat hat eine Stimme.</div>" },
-    "options": ["4", "5", "7", "6"],
+    "options": ["3.5", "4", "Bei untentschieden den Bundespräsdent:in", "6"],
     "correct": "4"
   },
   {
@@ -64,10 +64,4 @@
     ],
     "correct": "Alle tragen Beschlüsse gemeinsam, öffentlich einheitlich"
   },
-  {
-    "id": 79,
-    "type": "flashcard",
-    "front": { "html": "<div>Funfact: Gab es jemals einen Bundesrat, der öffentlich von einem Beschluss abgewichen ist?</div>" },
-    "back": { "html": "<div>Solche Fälle sind extrem selten, da die Kollegialität strikt eingehalten wird. Meistens werden abweichende Meinungen intern behandelt.</div>" }
-  }
 ]

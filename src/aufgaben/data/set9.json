@@ -9,7 +9,7 @@
     "id": 91,
     "type": "mcq",
     "question": "Wer leitet die Bundeskanzlei?",
-    "options": ["Bundeskanzler", "Bundespräsident", "Bundesrat", "Parlamentspräsident"],
+    "options": ["Bundesrat", "Bundespräsident", "Bundeskanzler", "Parlamentspräsident"],
     "correct": "Bundeskanzler"
   },
   {
@@ -33,22 +33,14 @@
   {
     "id": 94,
     "type": "flashcard",
-    "front": { "html": "<div>Funfact: Die Bundeskanzlei organisiert ein besonderes Ereignis jedes Jahr. Welches?</div>" },
+    "front": { "html": "<div>Die Bundeskanzlei organisiert ein besonderes Ereignis jedes Jahr. Welches?</div>" },
     "back": { "html": "<div>Sie organisiert die <strong>Bundesratsmedienkonferenz</strong> und den offiziellen <strong>Neujahrsapéro</strong> des Bundesrats, um Öffentlichkeit und Medien zu informieren.</div>" }
-  },
-  {
-    "id": 95,
-    "type": "hybrid",
-    "front": { "html": "<div>Zeige ein Bild des Bundeskanzlerbüros. Frage: Wer arbeitet hier und welche Funktion hat er?</div>" },
-    "back": { "html": "<div>Hier arbeitet der Bundeskanzler, der die Bundeskanzlei leitet und den Bundesrat unterstützt.</div>" },
-    "options": ["Bundeskanzler", "Bundespräsident", "Parlamentspräsident", "Bundesrat"],
-    "correct": "Bundeskanzler"
   },
   {
     "id": 96,
     "type": "mcq",
     "question": "Welche Abteilung der Bundeskanzlei koordiniert die Sitzungen des Bundesrats?",
-    "options": ["Kanzlei", "Kommunikation", "IT & Organisation", "Parlamentsdienste"],
+    "options": ["Parlamentsdienste", "Kommunikation", "IT & Organisation", "Kanzlei"],
     "correct": "Kanzlei"
   },
   {
@@ -72,7 +64,7 @@
   {
     "id": 99,
     "type": "flashcard",
-    "front": { "html": "<div>Funfact: Die Bundeskanzlei verwaltet auch historische Dokumente. Welche?</div>" },
+    "front": { "html": "<div>Die Bundeskanzlei verwaltet auch historische Dokumente. Welche?</div>" },
     "back": { "html": "<div>Sie archiviert unter anderem Botschaften, Protokolle der Bundesratssitzungen und historische Dokumente des Bundesrats, was für Forschung und Transparenz wichtig ist.</div>" }
   }
 ]

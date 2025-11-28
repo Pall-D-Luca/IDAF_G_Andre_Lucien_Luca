@@ -2,13 +2,13 @@
   {
     "id": 60,
     "type": "flashcard",
-    "front": { "html": "<div>Wie oft tagt der Bundesrat in der Regel?</div>" },
+    "front": { "html": "<div>Wie oft tagt (= Sitzung) der Bundesrat in der Regel?</div>" },
     "back": { "html": "<div>Der Bundesrat tagt in der Regel einmal pro Woche, meist am Mittwoch.</div>" }
   },
   {
     "id": 61,
     "type": "mcq",
-    "question": "Wer bereitet die Traktanden (Tagesordnung) für die Bundesratssitzung vor?",
+    "question": "Wer bereitet die Traktanden (= Tagesordnung) für die Bundesratssitzung vor?",
     "options": ["Bundespräsident", "Bundeskanzlei", "Parlament", "Bundesgericht"],
     "correct": "Bundeskanzlei"
   },
@@ -16,7 +16,7 @@
     "id": 62,
     "type": "flashcard",
     "front": { "html": "<div>Was passiert während der Diskussionen in der Sitzung?</div>" },
-    "back": { "html": "<div>Die Bundesräte besprechen Geschäfte, prüfen Gesetzesvorlagen, bereiten Botschaften ans Parlament vor und treffen Entscheidungen im Kollegium.</div>" }
+    "back": { "html": "<div>Die Bundesräte besprechen Geschäfte, prüfen Gesetzesvorlagen, bereiten Botschaften ans Parlament vor und treffen Entscheidungen zusammen.</div>" }
   },
   {
     "id": 63,
@@ -34,30 +34,23 @@
   {
     "id": 65,
     "type": "hybrid",
-    "front": { "html": "<div>Zeige ein Bild vom Bundesratssaal und frage: Wo finden die Sitzungen statt?</div>" },
+    "front": { "html": "<div>Wo finden die Sitzungen statt?</div>" },
     "back": { "html": "<div>Die Sitzungen finden im <strong>Bundesratssaal im Bundeshaus in Bern</strong> statt.</div>" },
-    "options": ["Bundeshaus Bern", "Parlament Zürich", "Bundesgericht Lausanne"],
+    "options": ["Bundeshaus Bern", "Parlament Zürich", "Bundesgericht Lausanne", "Bern’schen Aquarium"],
     "correct": "Bundeshaus Bern"
   },
   {
     "id": 66,
     "type": "mcq",
     "question": "Wer protokolliert die Beschlüsse der Bundesratssitzung?",
-    "options": ["Bundeskanzlei", "Bundespräsident", "Parlament", "Bundesgericht"],
+    "options": ["Karin Keller-Sutter", "Bundespräsident", "Parlament", "Bundeskanzlei"],
     "correct": "Bundeskanzlei"
   },
   {
     "id": 67,
     "type": "flashcard",
-    "front": { "html": "<div>Funfact: Gibt es öffentliche Sitzungen des Bundesrats?</div>" },
+    "front": { "html": "<div>Gibt es öffentliche Sitzungen des Bundesrats?</div>" },
     "back": { "html": "<div>Nein, die Sitzungen sind grundsätzlich vertraulich, damit offene Diskussionen möglich sind. Es werden nur Beschlüsse und Botschaften veröffentlicht.</div>" }
-  },
-  {
-    "id": 68,
-    "type": "mcq",
-    "question": "Wie werden Dringlichkeitsgeschäfte behandelt?",
-    "options": ["Sie werden sofort beschlossen", "Sie müssen eine Woche warten", "Sie werden an das Parlament delegiert", "Sie dürfen nicht behandelt werden"],
-    "correct": "Sie werden sofort beschlossen"
   },
   {
     "id": 69,
